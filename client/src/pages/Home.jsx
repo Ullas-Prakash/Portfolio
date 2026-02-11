@@ -6,13 +6,13 @@ import Contact from "../components/Contact"
 
 function Home() {
   return (
-    <>
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Contact />
-    </>
+    </div>
   )
 }
 
