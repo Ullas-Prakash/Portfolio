@@ -21,12 +21,13 @@ function Contact() {
       alert("Message Sent Successfully!")
       setForm({ name: "", email: "", message: "" })
     } catch (error) {
+      console.error(error)
       alert("Error sending message")
     }
   }
 
   return (
-    <section id="contact" className="min-h-screen bg-gray-900 text-white py-24 px-6">
+    <section id="contact" className="min-h-screen bg-gray-700 text-white py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
           Contact Me
